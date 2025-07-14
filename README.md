@@ -189,7 +189,7 @@ Check camera feed:
 - Open new terminal, type `rqt`, select camera topic and check whether the live feed from the drone's camera is visible.
 
 ### Simulation 1 Setup
-- **World File**: Uses `iris_ardupilot.world` with models: `ground_plane`, `boundary_20by20`, `box_target_red`, `line`, `line_clone`, `redblock_1by1`, `redblock_1by1_clone`, `redblock_1by1_clone_0`, `redblock_1by1_clone_1`, `iris_demo` (includes `iris_with_standoffs_demo_1`), `iris_demo_1` (includes `iris_with_standoffs_demo_2`), `iris_demo_2` (includes `iris_with_standoffs_demo_3`), `iris_demo_3` (includes `iris_with_standoffs_demo_4`).
+- **World File**: Uses `sproj_sim1.world` with models: `ground_plane`, `boundary_20by20`, `box_target_red`, `line`, `line_clone`, `redblock_1by1`, `redblock_1by1_clone`, `redblock_1by1_clone_0`, `redblock_1by1_clone_1`, `iris_demo` (includes `iris_with_standoffs_demo_1`), `iris_demo_1` (includes `iris_with_standoffs_demo_2`), `iris_demo_2` (includes `iris_with_standoffs_demo_3`), `iris_demo_3` (includes `iris_with_standoffs_demo_4`).
 - **Model Copy**: Copy models (`Custom_models`, `iris_with_lidar`, `iris_with_stanoffs`, `iris_with_stanoffs_demo`, `iris_with_stanoffs_demo_1` to `_3`, `ros_iris_with_ardupilot`) from `ardupilot_gazebo/models` to the `ardupilot_gazebo` package, merging and replacing as needed.
 - **Launch Files**: Use the following files from the `sim1_github` directory:
   - `begin_sim1.sh`: Launches Gazebo with `sproj_sim1.launch` and 4 UAV instances (`-I0` to `-I3`).
