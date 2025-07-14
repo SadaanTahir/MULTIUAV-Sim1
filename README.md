@@ -1,7 +1,7 @@
 # Multi-UAV Swarm Simulation - Version 1
 
 ## Description
-This tutorial guides you through setting up a swarm simulation environment for 4 quadcopters using Ardupilot + SITL on Gazebo. Each quadcopter has a downward-facing camera to detect colored cubes. The goal is to simulate a swarm scenario where drones autonomously identify colored cubes (markers) in a 20x20 meter grid, confined to divided sections via geofencing to prevent collisions.
+This tutorial guides you through setting up a swarm simulation environment for 4 quadcopters using Ardupilot + SITL on Gazebo. Each quadcopter, modeled as `iris_with_standoffs_demo_1` to `_4`, is equipped with a downward-facing camera for detecting colored cubes. Simulation 1 uses `iris_ardupilot.world` with models: `ground_plane`, `boundary_20by20`, `box_target_red`, `line`, `line_clone`, `redblock_1by1`, and clones. YOLO is partially implemented for cube detection.
 
 ## Requirements
 - Ubuntu 20.04.6 LTS
@@ -186,4 +186,9 @@ roslaunch ardupilot_gazebo iris_with_roscam.launch
 ```
 
 Check camera feed:
-- Open new terminal, type `rqt`, select camera topic and check whether the live feed from the drone is visible.
+- Open new terminal, type `rqt`, select camera topic.
+
+### Simulation 1 Setup
+- **World File**: Uses `iris_ardupilot.world` with models: `ground_plane`, `boundary_20by20`, `box_target_red`, `line`, `line_clone`, `redblock_1by1`, `redblock_1by1_clone`, `redblock_1by1_clone_0`, `redblock_1by1_clone_1`, `iris_demo` (includes `iris_with_standoffs_demo_1`), `iris_demo_1` (includes `iris_with_standoffs_demo_2`), `iris_demo_2` (includes `iris_with_standoffs_demo_3`), `iris_demo_3` (includes `iris_with_standoffs_demo_4`).
+- **Model Copy**: Copy models (`Custom_models`, `iris_with_lidar`, `iris_with_stanoffs`, `iris_with_stanoffs_demo`, `iris_with_stanoffs_demo_1` to `_3`, `ros_iris_with_ardupilot`) from `ardupilot_gazebo/models` to the `ardupilot_gazebo` package, merging and replacing as needed.
+- **Multi-UAV Launch**: For 4 quadcopters, run `sim_vehicle.py` with instances `-I0` to `-I3` in separate terminals, then launch Gazebo with `iris_ardupilot.world`.
