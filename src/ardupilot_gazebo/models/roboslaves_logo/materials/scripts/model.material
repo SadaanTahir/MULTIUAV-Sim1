@@ -1,0 +1,14 @@
+material model/RoboSlaves
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture roboslaves.png
+      }
+    }
+  }
+}
+

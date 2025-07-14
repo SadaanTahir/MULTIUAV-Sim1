@@ -1,0 +1,14 @@
+material model/WallTexture
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture wall_texture.jpg
+      }
+    }
+  }
+}
+

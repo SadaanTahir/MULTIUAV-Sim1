@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='roboslaves_logo'>
+    <static>1</static>
+    <link name='link_0'>
+      <pose>0 0 0 0 0 1.571</pose>
+      <visual name='visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>20 1 20</size>
+          </box>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>model://roboslaves_logo/materials/scripts</uri>
+            <uri>model://roboslaves_logo/materials/textures</uri>
+            <name>model/RoboSlaves</name>
+          </script>
+          <shader type='pixel'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>0.3 0.3 0.3 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.01 0.01 0.01 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>0</cast_shadows>
+      </visual>
+    </link>
+  </model>
+</sdf>
+
