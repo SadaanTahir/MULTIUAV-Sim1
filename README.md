@@ -207,3 +207,13 @@ Check camera feed:
      ```bash
      python3 final_sim1.py
      ```
+
+     ## Additional Notes
+
+- The contents of the folder **`ardupilot_gazebo_roscam`** are located in the **`master`** branch of this repository.
+- All launch files required to run **Simulation 1** are available in the **`sim1_github`** folder on the **`main`** branch.
+- Additional custom models created for **Simulation 1** are included in the provided archive **`model_editor_models.zip`**.  
+  After unzipping, add the extracted models directory to your `GAZEBO_MODEL_PATH`:
+  ```bash
+  export GAZEBO_MODEL_PATH=/path/to/unzipped/models:$GAZEBO_MODEL_PATH
+
