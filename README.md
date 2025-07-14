@@ -5,11 +5,9 @@ This tutorial guides you through setting up a swarm simulation environment for 4
 
 ## Simulation Demo
 
-Watch the full demo video of **Simulation 1** on YouTube:
+Watch the full demo video of this simulation on [YouTube](https://www.youtube.com/watch?v=2SpS4ITkZew):
 
 [![Simulation 1 Demo](https://img.youtube.com/vi/2SpS4ITkZew/0.jpg)](https://www.youtube.com/watch?v=2SpS4ITkZew)
-
-[Click here to watch the video](https://www.youtube.com/watch?v=2SpS4ITkZew)
 
 
 ## Requirements
