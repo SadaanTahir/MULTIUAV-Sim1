@@ -3,6 +3,11 @@
 ## Description
 This tutorial guides you through setting up a swarm simulation environment for 4 quadcopters using Ardupilot + SITL on Gazebo. Each quadcopter, modeled as `iris_with_standoffs_demo_1` to `_4`, is equipped with a downward-facing camera for detecting colored cubes. Simulation 1 uses `iris_ardupilot.world` with models: `ground_plane`, `boundary_20by20`, `box_target_red`, `line`, `line_clone`, `redblock_1by1`, and clones. 
 
+## Simulation Demo
+Watch the full demo video of **Simulation 1** on YouTube:
+[![Simulation 1 Demo](https://img.youtube.com/vi/2SpS4ITkZew/0.jpg)](https://www.youtube.com/watch?v=2SpS4ITkZew)
+[Click here to watch the video](https://www.youtube.com/watch?v=2SpS4ITkZew)
+
 ## Requirements
 - Ubuntu 20.04.6 LTS
 - Gazebo 11
