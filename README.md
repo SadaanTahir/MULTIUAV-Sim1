@@ -1,4 +1,4 @@
-# Multi-UAV Swarm Simulation - Version 1
+# Multi-UAV Swarm Simulation 1
 
 ## Description
 This tutorial guides you through setting up a swarm simulation environment for 4 quadcopters using Ardupilot + SITL on Gazebo. Each quadcopter, modeled as `iris_with_standoffs_demo_1` to `_4`, is equipped with a downward-facing camera for detecting colored cubes. Simulation 1 uses `iris_ardupilot.world` with models: `ground_plane`, `boundary_20by20`, `box_target_red`, `line`, `line_clone`, `redblock_1by1`, and clones. 
