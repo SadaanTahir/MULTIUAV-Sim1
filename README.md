@@ -186,21 +186,4 @@ roslaunch ardupilot_gazebo iris_with_roscam.launch
 ```
 
 Check camera feed:
-- Open new terminal, type `rqt`, select camera topic.
-
-### Model Setup
-In `ardupilot_gazebo/models`, copy:
-- `Custom_models`
-- `iris_with_lidar`
-- `iris_with_stanoffs`
-- `iris_with_stanoffs_demo`
-- `iris_with_stanoffs_demo_1`
-- `iris_with_stanoffs_demo_2`
-- `iris_with_stanoffs_demo_3`
-- `ros_iris_with_ardupilot`
-
-Merge and replace if prompted. `iris_with_stanoffs_demo` is the base model; others have minor SDF changes.
-
-### Additional Notes
-- Copied `launch` and `worlds` folders into `ardupilot_gazebo` package.
-- YOLO implementation in progress for main simulation.
+- Open new terminal, type `rqt`, select camera topic and check whether the live feed from the drone is visible.
